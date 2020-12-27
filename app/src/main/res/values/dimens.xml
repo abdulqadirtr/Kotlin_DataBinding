@@ -4,4 +4,12 @@
     <dimen name="small_padding">8dp</dimen>
     <dimen name="layout_margin">16dp</dimen>
     <dimen name="padding">16dp</dimen>
+
+    <dimen name="wide_range">16dp</dimen>
+    <dimen name="half">8dp</dimen>
+    <dimen name="boxtext">24sp</dimen>
+
+
 </resources>
+
+

@@ -16,6 +16,9 @@ class MainActivity : AppCompatActivity() {
         //setContentView(R.layout.activity_main)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
+      //  binding.nameText.text= "Abdul Qadir"
+
+
 /*
         findViewById<Button>(R.id.done_button).setOnClickListener {
             sendNickame(it)
@@ -37,12 +40,15 @@ class MainActivity : AppCompatActivity() {
         binding.nicknameEdit.visibility = View.GONE
         binding.nameText.visibility = View.VISIBLE
         */
-
+        val myName: MyName = MyName("Abdul Qadir")
         binding.apply {
             nameText.text = binding.nicknameEdit.text
             nicknameEdit.visibility = View.GONE
             nameText.visibility = View.VISIBLE
             doneButton.visibility = View.GONE
+            binding.myName = myName
+            myName?.nickname = nicknameEdit.text.toString()
+            invalidateAll()
 
         }
 
